@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+input {
+  line-height: normal;
+}
+label,
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+  border-radius: 0.2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+
+  line-height: 1.6rem;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+
+  box-sizing: content-box;
+  width: 100%;
+
+  overflow: visible;
+}

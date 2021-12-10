@@ -103,10 +103,46 @@
     display: flex;
     justify-content: space-between;
     margin: 0 -15px;
-    padding: 0 18px;
+    padding: 5px 18px;
+
     &--head {
-      &---ip {
+      &---text {
+        // display: block;
+
+        // width: 100%;
+        padding: 9px 18px;
+        border: none;
+        box-shadow: none;
+
+        opacity: 1;
+        color: #495057;
+        font-size: 1.5rem;
+        border-radius: 0.25rem !important;
+        background-color: transparent !important;
+        background-clip: padding-box;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        height: calc(2.875rem + 2px);
+        line-height: 1.5;
       }
     }
+    &--action {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      &---icon {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+      }
+      // &---text {
+      //   &-lb {
+      //   }
+      // }
+    }
   }
+}
+.list__todo--action---time-lb {
+  margin-left: 5px;
+  color: rgba(0, 0, 0, 0.5) !important;
+  font-size: 0.8rem;
 }

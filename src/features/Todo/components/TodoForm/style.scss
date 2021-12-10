@@ -1,39 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-input,
-textarea,
-select,
-button {
-  outline: none;
-}
-input {
-  line-height: normal;
-}
-label,
-button {
-  cursor: pointer;
-}
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: #f8f9fa;
-  border-radius: 0.2rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-
-  line-height: 1.6rem;
-}
 .header {
   margin: 54px auto;
   padding: 9px;
+
   &__title {
     margin: 4.5px;
     padding: 27px;
@@ -42,6 +10,7 @@ button {
     justify-content: center;
     align-items: center;
     gap: 0 10px;
+
     &--text {
       color: #007bff;
 
@@ -49,6 +18,7 @@ button {
     }
   }
   &__input {
+    // box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     margin: 4.5px;
     padding: 18px;
 
@@ -56,6 +26,8 @@ button {
     justify-content: center;
     border: none;
     align-items: center;
+    background-color: #fff;
+
     &--text {
       display: block;
       padding: 9px 18px;

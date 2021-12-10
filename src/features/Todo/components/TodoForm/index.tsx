@@ -34,44 +34,45 @@ class TodoForm extends Component<Props, State> {
   handleDateChange = (e: any) => {
     this.setState({ date: new Date(e.target.value) })
   }
+
   render() {
     return (
-      <div className="container">
-        <div className="header">
-          <div className="header__title">
-            <FaCheckSquare
-              className="header__title--icon"
-              style={{}}
-              size={'3em'}
-              color={'#007bff'}
-            />
-            <u className="header__title--text">My Todo-s</u>
-          </div>
-          <div className="header__input">
-            <input
-              type="text"
-              name="title"
-              id=""
-              value={this.state.title}
-              className="header__input--text"
-              placeholder="Add new"
-              onChange={this.handleOnchange}
-            />
-            <input
-              type="date"
-              name=""
-              id=""
-              className="header__input--date"
-              onChange={this.handleDateChange}
-            />
-            <button
-              type="submit"
-              className="header__input--submit"
-              onClick={() => this.handleSubmit({ title: this.state.title, date: this.state.date })}
-            >
-              Add
-            </button>
-          </div>
+      <div className="header">
+        <div className="header__title">
+          <FaCheckSquare
+            className="header__title--icon"
+            style={{ alignItems: 'center' }}
+            size={'3em'}
+            color={'#007bff'}
+          />
+          <u className="header__title--text">My Todo-s</u>
+        </div>
+        <div className="header__input">
+          <input
+            type="text"
+            name="title"
+            id=""
+            value={this.state.title}
+            className="header__input--text"
+            placeholder="Add new"
+            onChange={this.handleOnchange}
+          />
+          <input
+            type="date"
+            name=""
+            id=""
+            required
+            pattern="\d{4}-\d{2}-\d{2}"
+            className="header__input--date"
+            onChange={this.handleDateChange}
+          />
+          <button
+            type="submit"
+            className="header__input--submit"
+            onClick={() => this.handleSubmit({ title: this.state.title, date: this.state.date })}
+          >
+            Add
+          </button>
         </div>
       </div>
     )
